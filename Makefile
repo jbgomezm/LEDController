@@ -90,9 +90,9 @@ BUILD_DIR = build
 all: sim_quark
 
 sim_quark:
-	rm -f a.out *.vcd
-	iverilog -DBENCH  bench_quark.v $(OBJS)
-	vvp a.out
+	rm -f /tmp/a.out /tmp/*.vcd
+	iverilog -DBENCH  bench_quark.v $(OBJS) -o /tmp/a.out
+	vvp /tmp/a.out
 	gtkwave bench.vcd
 
 sim_quark_flash:
