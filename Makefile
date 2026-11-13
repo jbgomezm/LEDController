@@ -74,7 +74,7 @@ COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bcd2bin/bcd2bin.v
 COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bcd2bin/perip_bcd2bin.v
 COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bcd2bin/rsr4.v
 COMM_OBJS += ../../../digital_UN/femtoRV/basic/rtl/cores/bram/bram.v
-COMM_OBJS +=  ../../../digital_UN/femtoRV/basic/rtl/SOC.v
+COMM_OBJS +=  ./SOC.v
 
 OBJS += $(COMM_OBJS)
 
