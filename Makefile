@@ -91,7 +91,7 @@ all: sim_quark
 
 sim_quark:
 	rm -f a.out *.vcd
-	iverilog -DBENCH  ../../../digital_UN/femtoRV/basic/rtl/bench_quark.v $(OBJS)
+	iverilog -DBENCH  bench_quark.v $(OBJS)
 	vvp a.out
 	gtkwave bench.vcd
 
