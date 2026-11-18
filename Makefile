@@ -29,59 +29,61 @@ endif
 
 TCL_SCRIPT = auto_generated.tcl
 
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/cpu/femtorv32_quark_V2.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/uart/perip_uart.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/uart/uart.v
+RELATIVE_PATH = ../../../digital_UN/femtoRV/basic/rtl/cores
+
+COMM_OBJS+= $(RELATIVE_PATH)/cpu/femtorv32_quark_V2.v
+COMM_OBJS+= $(RELATIVE_PATH)/uart/perip_uart.v
+COMM_OBJS+= $(RELATIVE_PATH)/uart/uart.v
 
 
 
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/mult_ASM/perip_mult.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/mult_ASM/mult_32.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/mult_ASM/acc.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/mult_ASM/comp.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/mult_ASM/lsr_mult.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/mult_ASM/control_mult.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/mult_ASM/rsr.v
+COMM_OBJS+= $(RELATIVE_PATH)/mult_ASM/perip_mult.v
+COMM_OBJS+= $(RELATIVE_PATH)/mult_ASM/mult_32.v
+COMM_OBJS+= $(RELATIVE_PATH)/mult_ASM/acc.v
+COMM_OBJS+= $(RELATIVE_PATH)/mult_ASM/comp.v
+COMM_OBJS+= $(RELATIVE_PATH)/mult_ASM/lsr_mult.v
+COMM_OBJS+= $(RELATIVE_PATH)/mult_ASM/control_mult.v
+COMM_OBJS+= $(RELATIVE_PATH)/mult_ASM/rsr.v
 
 
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/divider_ASM/peripheral_div.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/divider_ASM/div_16/div_16.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/divider_ASM/div_16/control_div.v 
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/divider_ASM/div_16/counter_div.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/divider_ASM/div_16/subtractor.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/divider_ASM/div_16/lsr_div.v 
+COMM_OBJS+= $(RELATIVE_PATH)/divider_ASM/peripheral_div.v
+COMM_OBJS+= $(RELATIVE_PATH)/divider_ASM/div_16/div_16.v
+COMM_OBJS+= $(RELATIVE_PATH)/divider_ASM/div_16/control_div.v 
+COMM_OBJS+= $(RELATIVE_PATH)/divider_ASM/div_16/counter_div.v
+COMM_OBJS+= $(RELATIVE_PATH)/divider_ASM/div_16/subtractor.v
+COMM_OBJS+= $(RELATIVE_PATH)/divider_ASM/div_16/lsr_div.v 
             
 
 
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/sqrt_ASM/addc2.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/sqrt_ASM/count.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/sqrt_ASM/lsr.v 
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/sqrt_ASM/perip_sqrt.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/sqrt_ASM/sqrt.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/sqrt_ASM/lsr2.v
-COMM_OBJS+= ../../../digital_UN/femtoRV/basic/rtl/cores/sqrt_ASM/control.v
+COMM_OBJS+= $(RELATIVE_PATH)/sqrt_ASM/addc2.v
+COMM_OBJS+= $(RELATIVE_PATH)/sqrt_ASM/count.v
+COMM_OBJS+= $(RELATIVE_PATH)/sqrt_ASM/lsr.v 
+COMM_OBJS+= $(RELATIVE_PATH)/sqrt_ASM/perip_sqrt.v
+COMM_OBJS+= $(RELATIVE_PATH)/sqrt_ASM/sqrt.v
+COMM_OBJS+= $(RELATIVE_PATH)/sqrt_ASM/lsr2.v
+COMM_OBJS+= $(RELATIVE_PATH)/sqrt_ASM/control.v
 
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bin2bcd/add_sub_c2.v
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bin2bcd/bin2bcd.v
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bin2bcd/mux2.v
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bin2bcd/count.v
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bin2bcd/ctrl_b2b.v  
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bin2bcd/perip_bin2bcd.v
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bin2bcd/lsr4.v
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bin2bcd/reg_msb.v
+COMM_OBJS+= $(RELATIVE_PATH)/bin2bcd/add_sub_c2.v
+COMM_OBJS+= $(RELATIVE_PATH)/bin2bcd/bin2bcd.v
+COMM_OBJS+= $(RELATIVE_PATH)/bin2bcd/mux2.v
+COMM_OBJS+= $(RELATIVE_PATH)/bin2bcd/count.v
+COMM_OBJS+= $(RELATIVE_PATH)/bin2bcd/ctrl_b2b.v  
+COMM_OBJS+= $(RELATIVE_PATH)/bin2bcd/perip_bin2bcd.v
+COMM_OBJS+= $(RELATIVE_PATH)/bin2bcd/lsr4.v
+COMM_OBJS+= $(RELATIVE_PATH)/bin2bcd/reg_msb.v
 
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bcd2bin/bcd2bin.v
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bcd2bin/perip_bcd2bin.v
-COMM_OBJS+=../../../digital_UN/femtoRV/basic/rtl/cores/bcd2bin/rsr4.v
-COMM_OBJS += ../../../digital_UN/femtoRV/basic/rtl/cores/bram/bram.v
+COMM_OBJS+= $(RELATIVE_PATH)/bcd2bin/bcd2bin.v
+COMM_OBJS+= $(RELATIVE_PATH)/bcd2bin/perip_bcd2bin.v
+COMM_OBJS+= $(RELATIVE_PATH)/bcd2bin/rsr4.v
+COMM_OBJS += $(RELATIVE_PATH)/bram/bram.v
 COMM_OBJS +=  ./SOC.v
 
 OBJS += $(COMM_OBJS)
 
 FLASH_OBJS =  $(COMM_OBJS)
-FLASH_OBJS += ../../../digital_UN/femtoRV/basic/rtl/cores/spi_flash/MappedSPIFlash.v
-FLASH_OBJS += ../../../digital_UN/femtoRV/basic/rtl/SOC_flash.v
-SIM_OBJS   = ../../../digital_UN/femtoRV/basic/rtl/cores/sim_spi_flash/spiflash.v
+FLASH_OBJS += $(RELATIVE_PATH)/spi_flash/MappedSPIFlash.v
+FLASH_OBJS += $(RELATIVE_PATH)/SOC_flash.v
+SIM_OBJS   = $(RELATIVE_PATH)/sim_spi_flash/spiflash.v
 
 
 
